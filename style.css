@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: black;
+  color: white;
+}
+.main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 650px;
+  height: 25px;
+  background: #303030a1;
+  border-radius: 50px;
+  outline: none;
+  transition: all 0.4s;
+  cursor: pointer;
+
+}
+
+.slider:hover {
+  background: #303030;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 25px;
+  height: 35px;
+  background: #4aee44;
+  cursor: pointer;
+}
+#op {
+  font-size: 2.5rem;
+  margin: 20px 0 0 0;
+}

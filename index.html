@@ -1,0 +1,31 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Range Slider</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <input
+        type="range"
+        min="0"
+        max="100"
+        value="0"
+        class="slider"
+        id="range"
+      />
+      <div id="op"></div>
+    </div>
+
+    <script>
+      var range = document.getElementById("range");
+      var output = document.getElementById("op");
+      output.innerHTML = range.value;
+
+      range.oninput = function() {
+        output.innerHTML = this.value;
+      };
+    </script>
+  </body>
+</html>
